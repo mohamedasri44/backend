@@ -7,10 +7,12 @@ use App\Models\Client;
 use App\Models\Activite;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Sda extends Model
 {
     use HasFactory;
+    use SoftDeletes;
 
     protected $table = 'Sdas';
     protected $fillable = ['number'];
