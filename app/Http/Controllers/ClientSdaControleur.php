@@ -53,7 +53,7 @@ class ClientSdaControleur extends Controller
         $client = Client::find($Cientid);
         $sdas = array_filter(explode("\r\n", $sdas));
 
-        dd($client->attachSDA($sdas, \Carbon\Carbon::parse($datestart)));
+        //dd($client->attachSDA($sdas, \Carbon\Carbon::parse($datestart)));
 
 
 
@@ -75,8 +75,8 @@ class ClientSdaControleur extends Controller
         //         ]
         //     ]);
         // }
-        dump("jj");
-        // return redirect('ClientSda')->with('flash_message', 'clientsda Addedd!');
+        //dump("jj");
+        return redirect('ClientSda')->with('flash_message', 'clientsda Addedd!');
     }
 
     /**
