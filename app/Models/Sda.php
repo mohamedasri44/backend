@@ -14,7 +14,6 @@ class Sda extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $table = 'Sdas';
     protected $fillable = ['number'];
 
     public function clients()

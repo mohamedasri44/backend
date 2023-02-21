@@ -13,7 +13,6 @@ class Client extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $table = 'Clients';
     protected $fillable = ['name'];
 
     public function sdas()

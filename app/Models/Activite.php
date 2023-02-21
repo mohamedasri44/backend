@@ -9,7 +9,6 @@ class Activite extends Model
 {
     use HasFactory;
 
-    protected $table = 'activites';
     protected $fillable = ['name', 'prefixe', 'client_id'];
 
     public function client()

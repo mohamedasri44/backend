@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class ClientSda extends Model
 {
     use HasFactory;
-    protected $table = 'client_sda';
 
-    protected $fillable = [
+
+   protected $fillable = [
         'client_id',
         'sda_id',
         'date_start',
